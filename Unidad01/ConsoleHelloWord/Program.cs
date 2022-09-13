@@ -10,6 +10,8 @@ namespace ConsoleHelloWord
     {
         static void Main(string[] args)
         {
+            Console.WriteLine("Hello Word!");
+            Console.ReadKey(true);
         }
     }
 }
