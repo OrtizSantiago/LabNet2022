@@ -43,8 +43,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Interfaces\IOperaciones.cs" />
     <Compile Include="Logica\Comun.cs" />
     <Compile Include="Logica\LogicaOmnibus.cs" />
+    <Compile Include="Logica\LogicaTaxi.cs" />
     <Compile Include="Modelo\Omnibus.cs" />
     <Compile Include="Modelo\Taxi.cs" />
     <Compile Include="Modelo\Transporte.cs" />
@@ -54,8 +56,6 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Interfaces\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
