@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32901.215
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsolaExcepcion", "ConsolaExcepcion\ConsolaExcepcion.csproj", "{5AE62381-FB49-477A-9B1B-898756D614E2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsolaExcepcionTests", "ConsolaExcepcionTests\ConsolaExcepcionTests.csproj", "{C6579000-9ACF-474A-9AFE-84EF1F54A310}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5AE62381-FB49-477A-9B1B-898756D614E2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5AE62381-FB49-477A-9B1B-898756D614E2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5AE62381-FB49-477A-9B1B-898756D614E2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5AE62381-FB49-477A-9B1B-898756D614E2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C6579000-9ACF-474A-9AFE-84EF1F54A310}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C6579000-9ACF-474A-9AFE-84EF1F54A310}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C6579000-9ACF-474A-9AFE-84EF1F54A310}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C6579000-9ACF-474A-9AFE-84EF1F54A310}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {8E6CBDB9-5E06-4A5A-B689-55E2ECB09B1C}
+	EndGlobalSection
+EndGlobal
