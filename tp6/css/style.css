@@ -1,0 +1,184 @@
+body{
+    background-color: rgb(67, 65, 65);
+}
+
+.contacto{
+    color: aliceblue;
+    background-color: black;
+    box-shadow: 4px 4px 10px 0 rgb(122, 120, 120);
+    border-radius: 20px 20px 10px 10px;
+    font-size: 50px;
+    margin-top: 20px;
+    margin-bottom: 0px;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding-left: 30px;
+    display: flex;
+}
+.contacto, h2, h3{
+    font-family: 'Courier New', Courier, monospace;
+}
+h2{
+    color: aliceblue;
+    padding-left: 40px;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    margin-left: 20px;
+    margin-right: 20px;
+    background-color: black;
+    border-radius: 8px;
+    box-shadow: 4px 4px 10px 0 rgb(122, 120, 120);
+}
+h3{
+    font-size: 25px;
+    color: aliceblue;
+    margin-left: 20px;
+}
+
+.cajaform{
+    background-color: black;
+    padding: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    height: 50vw;
+    border-radius: 20px;
+    box-shadow: 4px 4px 10px 0 rgb(122, 120, 120);
+}
+.formulario{
+    background-color:rgb(21, 21, 21);
+    margin-left: 20px;
+    /* margin-bottom: 10px; */
+    height: 45vw;
+    width: 30%;
+    position: relative;
+    top: 30px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    box-shadow: 1px 2px 10px 5px rgb(66, 66, 63);
+}
+input{
+    background-color: rgb(77, 72, 72);
+}
+::placeholder{
+    color: rgb(199, 202, 205);
+}
+
+fieldset, .empresa{
+    display: flex;
+    flex-direction: column;
+}
+legend{
+    font-size: 25px;
+}
+
+.nom, .ap, .empresa{
+    width: 70%;
+}
+.ed{
+    width: 20%;
+}
+.campo, .campo1{
+    color: aliceblue;
+    margin: 10px;
+}
+label{
+    margin-left: 20px;
+    font-size: 20px;
+}
+.nombre, .apellido, .edad{
+    font-size: 20px;
+    margin-left: 20px;
+    margin-bottom: 10px;
+    color: aliceblue;
+    display: flex;
+    flex-direction: column;
+}
+
+.contenedor-boton{
+    display: flex;
+    justify-content: right;
+}
+.boton{
+    color: rgb(188, 192, 195);
+    background-color: rgb(6, 6, 6);
+    width: 100px;
+    border-radius: 6px;
+    box-shadow: 3px 2px 5px 0 rgb(77, 76, 75);
+    cursor: pointer;
+    margin: 25px;
+    padding: 5px;
+}
+.boton1{
+    color: rgb(188, 192, 195);
+    background-color: rgb(6, 6, 6);
+    width: 110px;
+    border-radius: 6px;
+    box-shadow: 3px 2px 5px 0 rgb(77, 76, 75);
+    cursor: pointer;
+    margin: 25px;
+    margin-right: 85px;
+    padding: 5px;
+}
+
+.modalcontainer, .modalcontainer2{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    min-height: 65vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(79, 79, 79, 0.7);
+    visibility: hidden;
+    z-index: 1;
+}
+.modal-content, .modal-content2{
+    width: 450px;
+    height: auto;
+    padding: 10px;
+    /* background-color: aliceblue; */
+    background-color: black;
+    text-align: center;
+    color: aliceblue;
+}
+.modal-content.h1, .modal-content2.h1{
+    font-size: 25px;
+}
+
+.boton2, .boton3{
+    background-color: black;
+    color: aliceblue;
+    font-size: 15px;
+    width: 60px;
+    height: 25px;
+    text-align: center;
+    cursor: pointer;
+    border: 2px solid whitesmoke;
+}
+
+.icon1, .icon2{
+    color: rgb(178, 186, 193);    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
