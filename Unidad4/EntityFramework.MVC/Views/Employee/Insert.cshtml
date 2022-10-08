@@ -1,0 +1,28 @@
+﻿@model EntityFramework.MVC.Models.EmployeeView
+
+@{
+    ViewBag.Title = "Empleado";
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title></title>
+</head>
+<body>
+    <div>
+        <h1> Insertar empleados </h1>
+
+        @using (Html.BeginForm("Insert", "Employee", FormMethod.Post))
+        {
+            <label> Nombre: </label> @Html.TextBoxFor(e => e.Name)
+            <label> Apellido: </label> @Html.TextBoxFor(e => e.LastName)
+
+            <input type="submit" class="btn btn-success" value="Guardar"/>
+         }
+
+    </div>
+</body>
+</html>

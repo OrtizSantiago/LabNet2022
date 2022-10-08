@@ -1,0 +1,50 @@
+﻿
+    @model List<EntityFramework.MVC.Models.EmployeeView>
+
+
+@{
+    ViewBag.Title = "Empleado";
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width"/>
+    <title> Empleados </title>
+</head>
+<body>
+    <div>
+      <h1> Lista de empleados </h1>
+      <table class="table table-hover table-striped" border="1">
+          <thead>
+              <tr>
+                  <th> ID </th>
+                  <th> Nombre </th>
+                  <th> Apellido </th>
+                  <th> Acción </th>
+              </tr>
+          </thead>
+
+          @foreach (var employee in Model)
+          {
+              <tr>
+                  <td> @employee.EmployeeId </td>
+                  <td> @employee.Name </td>
+                  <td> @employee.LastName </td>
+                  <td><button class="btn btn-primary"> @Html.ActionLink("Editar", "Update", new { Id = employee.EmployeeId }, new { onclick = "return confirm('Estás seguro de editar el empleado?')" })</button ></td>
+                  <td><button class="btn btn-danger">@Html.ActionLink("Borrar", "Delete", new { Id = employee.EmployeeId }, new { onclick = "return confirm('Estás seguro de borrar el empleado?')" })</button></td>
+              </tr>
+              
+          }
+
+      </table>
+    </div>
+    <div>
+        <button class="btn btn-success">
+            @Html.ActionLink("Insertar nuevo empleado", "Insert", "Employee")
+           
+        </button>
+    </div>
+</body>
+</html>
