@@ -1,0 +1,40 @@
+﻿@model List<EntityFramework.MVC.Models.Entities.Novel>
+@{
+    ViewBag.title = "Novela";
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title></title>
+</head>
+<body>
+    <div>
+        <h1> Lista de Novelas </h1>
+        <table class="table table-hover table-striped" border="1">
+            <thead>
+                <tr>
+                    <th> UsuarioId </th>
+                    <th> LibroId </th>
+                    <th> Titulo </th>
+                    <th> Completado </th>
+                </tr>
+            </thead>
+
+            @foreach (var novel in Model)
+            {
+                <tr>
+                    <td> @novel.userId </td>
+                    <td> @novel.id </td>
+                    <td> @novel.title</td>
+                    <td> @novel.completed</td>
+                </tr>
+
+            }
+
+        </table>
+    </div>
+</body>
+</html>

@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EntityFramework.Entities", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EntityFramework.MVC", "EntityFramework.MVC\EntityFramework.MVC.csproj", "{06934DAC-240B-4302-97B7-79010D6EE005}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApp", "WebApp\WebApp.csproj", "{69D57F63-5D80-4C49-B7F3-64104BA2C563}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{06934DAC-240B-4302-97B7-79010D6EE005}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{06934DAC-240B-4302-97B7-79010D6EE005}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{06934DAC-240B-4302-97B7-79010D6EE005}.Release|Any CPU.Build.0 = Release|Any CPU
+		{69D57F63-5D80-4C49-B7F3-64104BA2C563}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{69D57F63-5D80-4C49-B7F3-64104BA2C563}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{69D57F63-5D80-4C49-B7F3-64104BA2C563}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{69D57F63-5D80-4C49-B7F3-64104BA2C563}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
