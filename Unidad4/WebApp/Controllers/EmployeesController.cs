@@ -8,12 +8,14 @@ using System.Linq;
 using System.Net;
 using System.Net.Http;
 using System.Web.Http;
+using System.Web.Http.Cors;
 using System.Web.Http.Description;
 using WebApp.Models;
 using WebApp.Models.ViewModel;
 
 namespace WebApp.Controllers
 {
+    [EnableCors(origins: "*", headers:"*", methods:"GET,POST,PUT,DELETE,OPTIONS")]
     public class EmployeesController : ApiController
     {
         private Northwind db = new Northwind();
@@ -55,17 +57,23 @@ namespace WebApp.Controllers
 
         // PUT: api/Employees/5
         [ResponseType(typeof(void))]
-        public IHttpActionResult PutEmployees(int id, Employees employees)
+        public IHttpActionResult PutEmployees(int id, EmployeeView employeesView)
         {
             if (!ModelState.IsValid)
             {
                 return BadRequest(ModelState);
             }
 
-            if (id != employees.EmployeeID)
+            if (id != employeesView.EmployeeId)
             {
                 return BadRequest();
             }
+
+            Employees employees = new Employees();
+            employees.EmployeeID = id;
+            employees.FirstName = employeesView.Name;
+            employees.LastName = employeesView.LastName;
+            employees.Title= employeesView.Title;
 
             db.Entry(employees).State = EntityState.Modified;
 
